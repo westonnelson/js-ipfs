@@ -15,7 +15,8 @@
   ],
   "main": "src/index.js",
   "browser": {
-    "./src/grpc/transport.js": "./src/grpc/transport.browser.js"
+    "./src/grpc/transport.js": "./src/grpc/transport.browser.js",
+    "ipfs-core-utils/src/files/normalise-input": "ipfs-core-utils/src/files/normalise-input/index.browser.js"
   },
   "typesVersions": {
     "*": {
@@ -54,10 +55,10 @@
     "ws": "^7.3.1"
   },
   "devDependencies": {
-    "aegir": "^28.2.0",
+    "aegir": "^29.2.2",
     "it-all": "^1.0.4",
     "rimraf": "^3.0.2",
     "sinon": "^9.0.3",
-    "typescript": "^4.0.3"
+    "typescript": "4.0.x"
   }
 }
