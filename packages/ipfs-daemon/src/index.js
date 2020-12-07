@@ -71,6 +71,7 @@ class Daemon {
     await Promise.all([
       this._httpApi && this._httpApi.stop(),
       this._httpGateway && this._httpGateway.stop(),
+      this._grpcServer && this._grpcServer.stop(),
       // @ts-ignore - may not have stop if init was false
       this._ipfs && this._ipfs.stop()
     ])

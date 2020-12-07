@@ -62,6 +62,8 @@ class Messages extends EventEmitter {
   ready () {
     return new Promise((resolve) => {
       this._wss.on('listening', () => {
+        this.info = this._wss.address()
+        this.info.uri = `http://${this.info.address}:${this.info.port}`
         this.multiaddr = `/ip4/${this._wss.address().address}/tcp/${this._wss.address().port}/ws`
 
         resolve(this)
