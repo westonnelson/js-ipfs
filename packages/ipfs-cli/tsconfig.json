@@ -18,9 +18,6 @@
       "path": "../ipfs-daemon"
     },
     {
-      "path": "../ipfs-grpc-server"
-    },
-    {
       "path": "../ipfs-http-client"
     },
     {
