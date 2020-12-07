@@ -15,8 +15,7 @@
   ],
   "main": "src/index.js",
   "browser": {
-    "./src/grpc/transport.js": "./src/grpc/transport.browser.js",
-    "ipfs-core-utils/src/files/normalise-input": "ipfs-core-utils/src/files/normalise-input/index.browser.js"
+    "./src/grpc/transport.js": "./src/grpc/transport.browser.js"
   },
   "typesVersions": {
     "*": {
