@@ -13,7 +13,8 @@ function sendDirectory (index, source, path, mode, mtime) {
   }
 
   if (mtime) {
-    message.mtime = mtime
+    message.mtime = mtime.secs
+    message.mtimeNsecs = mtime.nsecs
   }
 
   if (mode != null) {
